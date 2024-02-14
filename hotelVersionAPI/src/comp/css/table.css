@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+}
+
+.inputBox{
+    position: relative;
+    width: 400px;
+}
+
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFC107;
+    background: #fff;
+    border-radius: 5px;
+    outline: none;
+    color: #000;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #000;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid ~ span, .inputBox input:focus ~ span{
+    color: #000;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background: #FFC107;
+    border-left: 1px solid #FFC107;
+    border-right: #FFC107;
+    letter-spacing: 0.2em;
+}
+
+.inputBox:nth-child(2) input:valid ~ span, .inputBox:nth-child(2) input:focus ~ span{
+    color: #000;
+    background: #FFC107;
+    border-radius: 2px;
+}
+
+.inputBox input:valid, .inputBox input:focus{
+    border: 1px solid #FFC107;
+}
+
+.divTitre{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #FFC107;
+    border-radius: 10px;
+    width: 1110px;
+    height: 45px;
+}
+
+.divForm{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #FFC107;
+    border-radius: 10px;
+    width: 1110px;
+    height: 600px;
+}
+
+.divForm:hover{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #000;
+    border-radius: 10px;
+    width: 1110px;
+    height: 600px;
+}
+
+.divFormS{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #FFC107;
+    border-radius: 10px;
+    width: 1110px;
+    height: 270px;
+}
+
+.divFormS:hover{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #000;
+    border-radius: 10px;
+    width: 1110px;
+    height: 270px;
+}
+
+.divFormX{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #FFC107;
+    border-radius: 10px;
+    width: 1110px;
+    height: 820px;
+}
+
+.divFormX:hover{
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px 3px #000;
+    border-radius: 10px;
+    width: 1110px;
+    height: 820px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+  
+  .custom-select select {
+    display: none;
+  }
+  
+  .select-selected {
+    background-color: #EFEFEF;
+    border: 1px solid #FFC107;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #FFC107 transparent transparent transparent;
+  }
+  
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #FFC107 transparent;
+    top: 7px;
+  }
+  
+  .select-items div,.select-selected {
+    color: #FFC107;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: #FFC107 #FFC107 #FFC107 #FFC107;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #FFC107;
+    border-radius: 5px;
+    text-align: left;
+  }
+  
+  .select-items {
+    position: absolute;
+    background-color: #EFEFEF;
+    color: #000;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  
+  .select-hide {
+    display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+    background-color: #000;
+    color: #fff;
+  }
+  
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #FFC107;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FFC107;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #FFC107;
+}
+
+.btnAjt{
+    background: #55AA55;
+    color: #000;
+    font-weight: bold;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.btnAjt:hover{
+  border: 1px solid #000;
+  box-shadow: 0 0 10px 1px #000;
+}
+
+.btnMod{
+    background: orange;
+    color: #000;
+    font-weight: bold;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.btnMod:hover{
+    border: 1px solid #000;
+    box-shadow: 0 0 10px 1px #000;
+}
+
+.btnSup{
+    background: red;
+    color: #000;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 5px;
+}
+.btnSup:hover{
+    border: 1px solid #000;
+    box-shadow: 0 0 10px 1px #000;
+}

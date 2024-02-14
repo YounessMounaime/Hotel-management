@@ -1,0 +1,47 @@
+﻿#buttonn {
+    display: inline-block;
+    background-color: #FFC100;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius:30px;
+    border-color:#808080;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+    #buttonn::after {
+        /*content: "\f062";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;*/
+        
+    }
+
+#buttonn:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#buttonn:active {
+    background-color: #555;
+}
+
+#buttonn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media(min-width: 500px) {
+    #buttonn {
+        margin: 30px;
+    }
+}

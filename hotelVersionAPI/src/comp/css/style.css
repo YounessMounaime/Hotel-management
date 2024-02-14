@@ -1,0 +1,199 @@
+﻿
+
+marquee, header {
+    background-color: #262526;
+    color: white;
+}
+#custumFont a{
+    font-family: 'Britannic Bold';
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+nav {
+    background-color: black;
+}
+.custumFont {
+    font-family: 'Britannic Bold';
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+}
+@media all and (min-width: 992px) {
+    .navbar .dropdown-menu-end {
+        right: 0;
+        left: auto;
+    }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: .3s;
+        margin-top: 0;
+    }
+
+    .navbar .nav-item:hover .nav-link {
+        color: #fff;
+    }
+
+    .navbar .dropdown-menu.fade-down {
+        top: 80%;
+        transform: rotateX(-75deg);
+        transform-origin: 0% 0%;
+    }
+
+    .navbar .dropdown-menu.fade-up {
+        top: 180%;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        transition: .3s;
+        opacity: 1;
+        visibility: visible;
+        top: 100%;
+        transform: rotateX(0deg);
+    }
+}
+.font-achtung{
+    font-family:Dubai;
+}
+
+.PhotoLabel {
+    width: 230px;
+    height: 230px;
+    transition: transform 0.2s;
+    margin: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: white;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #FFC107;
+}
+
+.Item {
+    position: relative;
+    
+}
+.buttonoverlapmulti {
+    position: static;
+    top: 90%;
+    opacity: 0;
+}
+
+
+    .Item:hover {
+        box-shadow: 0 0 5px 2px grey;
+        cursor: pointer;
+        display: block;
+    }
+
+        .Item:hover .buttonoverlapmulti {
+            box-shadow: 0 0 5px 2px grey;
+            cursor: pointer;
+            display: block;
+            opacity:1;
+        }
+        .Item:hover .PhotoLabel {
+            transform: scale(1.05);
+        }
+
+#module {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.containerIMG {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px; /*customize to your needs 100%*/
+    height: 280px; /*customize to your needs*/
+}
+
+#PhotoLabel {
+    max-width: 100%;
+    max-height: 100%;
+}
+    #module #collapseExample.collapse:not(.show) {
+        display: block;
+        height: 3rem;
+        overflow: hidden;
+    }
+
+    #module #collapseExample.collapsing {
+        height: 3rem;
+    }
+
+    #module a.collapsed::after {
+        content: '+ Show More';
+    }
+
+    #module a:not(.collapsed)::after {
+        content: '- Show Less';
+    }
+
+.button {
+    display: inline-block;
+    background: #FFC107;
+    color: #000;
+    border:none;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+}
+
+    .button:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translate(0px, -10px) scale(1.2);
+        transform: translate(0px, -10px) scale(1.2);
+    }
+
+/*.buttonView {
+    display: inline-block;
+    background: black;
+    color: #FFC107;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    -webkit-transition: all ease-in-out 300ms;
+    transition: all ease-in-out 300ms;
+    text-decoration: none;
+}
+    .buttonView:hover {
+        box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+        -webkit-transform: translate(0px, -10px) scale(1.2);
+        transform: translate(0px, -10px) scale(1.2);
+        color: white;
+        text-decoration:none;
+    }*/
+
+
+.grid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divMAJProduit {
+    background: white;
+    box-shadow: 0 0 10px 3px grey;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+    .divMAJProduit:hover {
+        background: white;
+        box-shadow: 0 0 10px 3px #FFC107;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-radius: 10px;
+    }
